@@ -126,4 +126,15 @@ npm test
 npm run build
 ```
 ---
-* Test PR
+### Suggestions: 
+ 
+#### Scaling Strategies
+- Horizontal scaling with Kubernetes
+- Vertical scaling for resource-intensive workloads
+- Caching and CDNs for faster access
+- Auto-scaling based on real-time traffic
+
+#### Cost Optimizations
+- Resource quotas and spot instances
+- Managed services with optimized configurations
+- Data compression and serverless architecture for low-cost operations
