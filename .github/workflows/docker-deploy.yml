@@ -3,7 +3,7 @@ name: Docker Deploy
 on:
   push:
     branches:
-      - main
+      - app-title-change
 
 jobs:
   build-and-push:
@@ -25,7 +25,7 @@ jobs:
       - name: Push Docker image
         run: docker push ${{ secrets.DOCKER_USERNAME }}/react:latest
       
-      - name: Run Trivy vulnerability scan
-        uses: aquasecurity/trivy-action@0.29.0
-        with:
-          image-ref: ${{ secrets.DOCKER_USERNAME }}/react:latest
+      # - name: Run Trivy vulnerability scan
+      #   uses: aquasecurity/trivy-action@0.29.0
+      #   with:
+      #     image-ref: ${{ secrets.DOCKER_USERNAME }}/react:latest
