@@ -25,6 +25,8 @@ jobs:
       - name: Push Docker image
         run: docker push ${{ secrets.DOCKER_USERNAME }}/react:latest
       
+      - name: Print Docker username (DEBUG ONLY)
+        run: echo "Docker username ${{ secrets.DOCKER_USERNAME }}"
       # - name: Run Trivy vulnerability scan
       #   uses: aquasecurity/trivy-action@0.29.0
       #   with:
